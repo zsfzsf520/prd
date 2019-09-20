@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <link rel="stylesheet" href="style/style5.css?v=80">
+    <link rel="stylesheet" href="style/animate.css?v=80">
+    <!--    <link rel="stylesheet" href="style/jquery.fullPage.css?v=80">-->
+    <link rel="stylesheet" href="style/swiper.min.css?v=80">
+
+    <title>PANDORA员工行为大调查</title>
+    <script src="js/jquery-2.1.4.min.js?v=80"></script>
+    <!--    <script src="js/jquery.fullPage.min.js?v=80"></script>-->
+    <script src="js/swiper.min.js?v=80"></script>
+    <script src="https://www.jwnice.com/jywx/wxshare/wxShare.js?v=80"></script>
+    <!--<script src="js/vconsole.js?v=80"></script>-->
+    <script src="js/html2canvas2.js?v=80"></script>
+    <style>
+        #mainContent {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        .page1Contet input {
+            caret-color: white;
+        }
+    </style>
+    <script>
+        function setFontSize() {
+            //获取html元素
+            var html = document.getElementsByTagName('html')[0];
+            //屏幕的宽度（兼容处理）
+            var w = document.documentElement.clientWidth || document.body.clientWidth;
+            var h = document.documentElement.clientHeight || document.body.clientHeight;
+            //750这个数字是根据你的设计图的实际大小来的，所以值具体根据设计图的大小
+            html.style.fontSize = w / 25 + "px ";
+//            $(".page2Contet").width("100%");
+        }
+
+        setFontSize()
+        // var vConsole = new VConsole();
+        document.addEventListener('touchmove', function (e) {
+            e.preventDefault();
+        }, false);
+    </script>
+</head>
+<body>
+<!--<div id="scollContent" class="fullPage">-->
+<!--<img src='' data-src="img/bg.jpg?v=80" alt="" class="lazyLoad fullPage">-->
+<audio src="img/music.mp3?v=80" loop preload id="bgMusic"></audio>
+<div id="mainContent" class="swiper-container">
+    <!--<div class="music"  data-id="1">-->
+    <!--<img src='' data-src="img/musicOn.png?v=80" alt="" class="lazyLoad fullPage">-->
+    <!--<img src='' data-src="img/musicOff.png?v=80" alt="" class="lazyLoad fullPage hide">-->
+    <!--</div>-->
+
+    <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-no-swiping">
+            <div class="fullPage">
+                <div class="sectionContent">
+                    <div class="centerContet">
+                        <div class="page0Contet">
+                            <div id="men">
+                                <img src='' data-src="img/p0/men.png?v=80" alt="" class="lazyLoad men">
+                                <img src='' data-src="img/p0/p0_light.png?v=80" alt="" class="lazyLoad light">
+                                <img src='' data-src="img/p0/p0_girl.png?v=80" alt="" class="lazyLoad girl">
+                                <img src='' data-src="img/p0/p0_word_0.png?v=80" alt="" class="lazyLoad word word0">
+                                <img src='' data-src="img/p0/p0_word_1.png?v=80" alt="" class="lazyLoad word word1">
+                                <img src='' data-src="img/p0/p0_word_2.png?v=80" alt="" class="lazyLoad word word2">
+                                <img src='' data-src="img/p0/p0_word_3.png?v=80" alt="" class="lazyLoad word word3">
+                                <img src='' data-src="img/p0/p0_hua.png?v=80" alt="" class="lazyLoad hua">
+                            </div>
+                            <img src='' data-src="img/p0/tip.png?v=80" alt="" class="lazyLoad tip hide">
+                        </div>
+                    </div>
+
+                    <!--<div class="pageContet">-->
+                    <!--&lt;!&ndash;<img src='' data-src="img/1/bg.jpg?v=80"  alt="" class="fullPage">&ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<img src='' data-src="img/1/bg.jpg?v=80"  alt="">-->
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide swiper-no-swiping">
+            <div class="fullPage">
+                <div class="sectionContent">
+                    <div class="centerContet">
+                        <div class="page1Contet">
+                            <img src='' data-src="img/p1/bg.jpg?v=80" alt="" class="lazyLoad fullPage">
+                            <img src='' data-src="img/p1/yun.png?v=80" alt="" class="lazyLoad yun">
+                            <div class="yun0">
+                                <img src='' data-src="img/p1/yun0.png?v=80" alt="" class="lazyLoad fullPage">
+                            </div>
+                            <div class="tit">
+                                <img src='' data-src="img/p1/tit.png?v=80" alt="" class="lazyLoad fullPage">
+                                <div class="qiqiu">
+                                    <img src='' data-src="img/p1/qiqiu01.png?v=80" alt="" class="lazyLoad fullPage">
+                                </div>
+                            </div>
+                            <img src='' data-src="img/p1/girl.png?v=80" alt="" class="lazyLoad girl">
+
+                            <div class="feiji">
+                                <img src='' data-src="img/p1/feiji.png?v=80" alt="" class="lazyLoad fullPage">
+                            </div>
+                            <div class="nameInput">
+                                <img src='' data-src="img/p1/nameInput.png?v=80" alt="" class="lazyLoad fullPage">
+                                <input type="text" placeholder="请输入你的名字" class="fullPage">
+                            </div>
+                            <div class="sexBtn sexBtnW" data-id="0">
+                                <img src="img/p1/woman.png" alt="" class="fullPage">
+                                <img src="img/p1/woman_on.png" alt="" class="fullPage">
+                            </div>
+                            <div class="sexBtn sexBtnM" data-id="1">
+                                <img src="img/p1/man.png" alt="" class="fullPage">
+                                <img src="img/p1/man_on.png" alt="" class="fullPage">
+                            </div>
+                            <div class="restBtn btn">
+                                <img src='' data-src="img/p1/restBtn.png?v=80" alt="" class="lazyLoad fullPage">
+                            </div>
+                            <div class=" startBtn btn">
+                                <img src='' data-src="img/p1/startBtn.png?v=80" alt="" class="lazyLoad fullPage">
+                            </div>
+                            <img src='' data-src="img/down01.png?v=80" alt="" class="lazyLoad down hide" id="down1">
+                            <div class="tankuangBox fullPage hide">
+                                <img src='' data-src="img/p1/tankuang.png?v=80" alt="" class="lazyLoad tankuang tankuang1 hide">
+                                <img src='' data-src="img/p1/tankuang2.png?v=80" alt="" class="lazyLoad tankuang tankuang2 hide">
+                                <div class="button03 closeBtn">
+                                    <img src='' data-src="img/button03.png?v=80" alt="" class="lazyLoad fullPage">
+
+                                </div>
+
+                            </div>
+                            <!--<video id="vidoeId2_2" data-vid="kmx3c8d9l4" class="fullPage"-->
+                            <!--src="http://ajmilk.h5tu.com/img/video2.mp4"-->
+                            <!--webkit-playsinline="true" x-webkit-airplay="true" playsinline="true" x5-video-player-type="h5"-->
+                            <!--x5-video-player-fullscreen="true" preload="auto" atuto style="position: absolute;z-index: 100"></video>-->
+                            <!--<div id="videoBtn2"-->
+                            <!--style="position: absolute;width: 100px;height: 100px;right: 0;top: 0;background-color: red;z-index: 100;z-index: 1000">视频2-->
+                            <!--</div>-->
+
+                        </div>
+
+                    </div>
+
+                    <!--<div class="pageContet">-->
+                    <!--&lt;!&ndash;<img src='' data-src="img/1/bg.jpg?v=80"  alt="" class="fullPage">&ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<img src='' data-src="img/1/bg.jpg?v=80"  alt="">-->
+                </div>
+
+            </div>
+        </div>
+        <div class="swiper-slide swiper-no-swiping">
+            <div class="fullPage">
+                <div class="sectionContent">
+                    <div class="centerContet">
+                        <div class="page2Contet">
+                            <div class="bg">
+
+
+                                <img src='' data-src="img/p2/bg.jpg?v=80" alt="" class="lazyLoad fullPage">
+
+                                <div class="girl">
+                                    <img src='' data-src="img/p2/girl01.png?v=80" alt=""
+                                         class="lazyLoad fullPage opacity0">
+                                    <img src='' data-src="img/p2/girl02.png?v=80" alt=""
+                                         class="lazyLoad fullPage opacity0">
+                                </div>
+                                <div class="gouPen">
+                                    <img src='' data-src="img/p2/pen.png" alt="" class="lazyLoad fullPage">
+                                    <img src='' data-src="img/p2/dog01.png" alt="" class="lazyLoad  p2gou p2gou1">
+                                    <img src='' data-src="img/p2/dog02.png" alt=""
+                                         class="lazyLoad  p2gou p2gou2 opacity0">
+                                </div>
+                            </div>
+                            <img src='' data-src="img/p2/yun_up.png?v=80" alt="" class="lazyLoad yun1">
+                            <img src='' data-src="img/p2/yun.png?v=80" alt="" class="lazyLoad yun2">
+                            <div class="qiqiu">
+                                <img src='' data-src="img/p2/qiqiu.png?v=80" alt="" class="lazyLoad fullPage">
+                            </div>
+                            <div class="ansPage fullPage">
+                                <div class="wenti2">
+                                    <img src='' data-src="img/p2/wenti.png?v=80" alt="" class="lazyLoad fullPage">
+                                    <div class="questionBox">
+                                        <div class="question" data-id="1">
+                                            <img src='' data-src="img/p2/a.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                        <div class="question" data-id="2">
+                                            <img src='' data-src="img/p2/b.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                        <div class="question" data-id="3">
+                                            <img src='' data-src="img/p2/c.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                    </div>
+                                    <div class="button03 hide">
+                                        <img src='' data-src="img/button03.png?v=80" alt=""
+                                             class="lazyLoad fullPage">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide swiper-no-swiping">
+            <div class="fullPage">
+                <div class="sectionContent">
+                    <div class="centerContet">
+                        <div class="page3Contet">
+                            <div class="bg">
+                                <img src='' data-src="img/p3/bg.jpg?v=80" alt="" class="lazyLoad fullPage">
+                                <img src='' data-src="img/p3/girl.png?v=80" alt="" class="lazyLoad girl girl1">
+                                <img src='' data-src="img/p3/girl2.png?v=80" alt=""
+                                     class="lazyLoad girl girl2 opacity0">
+                                <img src='' data-src="img/p3/girl0.png?v=80" alt="" class="lazyLoad girl0 opacity0">
+                                <img src='' data-src="img/p3/girl1.png?v=80" alt="" class="lazyLoad girl0 opacity0">
+                                <img src='' data-src="img/p3/qipao01.png" alt="" class="lazyLoad qipao01">
+                                <img src='' data-src="img/p3/qipao02.png" alt="" class="lazyLoad qipao02">
+                                <img src='' data-src="img/p3/qipao03.png" alt="" class="lazyLoad qipao03">
+                                <div class="feiji">
+                                    <img src='' data-src="img/p3/feiji.png?v=80" alt="" class="lazyLoad fullPage">
+                                </div>
+                                <div class="qiqiu">
+                                    <img src='' data-src="img/p3/qiqiu.png?v=80" alt="" class="lazyLoad fullPage">
+
+                                </div>
+                                <img src='' data-src="img/p3/yun0.png" alt="" class="lazyLoad yun0">
+                                <div class="yun1">
+                                    <img src='' data-src="img/p3/yun1.png" alt="" class="lazyLoad fullPage">
+
+                                </div>
+                            </div>
+                            <img src='' data-src="img/p3/yun03.png" alt="" class="lazyLoad yun03">
+                            <img src='' data-src="img/p3/yun02.png" alt="" class="lazyLoad yun02">
+
+
+                            <div class="ansPage fullPage">
+                                <div class="wenti3">
+                                    <img src='' data-src="img/p3/wenti.png?v=80" alt="" class="lazyLoad fullPage">
+                                    <div class="questionBox">
+                                        <div class="question" data-id="1">
+                                            <img src='' data-src="img/p3/a.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                        <div class="question" data-id="2">
+                                            <img src='' data-src="img/p3/b.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                        <div class="question" data-id="3">
+                                            <img src='' data-src="img/p3/c.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                    </div>
+                                    <div class="button03 hide">
+                                        <img src='' data-src="img/button03.png?v=80" alt=""
+                                             class="lazyLoad fullPage">
+                                    </div>
+                                </div>
+                                <!--<img src='' data-src="img/down.png?v=80" alt="" class="lazyLoad down hide" id="down3">-->
+
+                            </div>
+
+                            <!--<div class="qiqiu">-->
+                            <!--<img src='' data-src="img/p3/qiqiu.png?v=80"  alt="" class="fullPage">-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide swiper-no-swiping">
+            <div class="fullPage">
+                <div class="sectionContent">
+                    <div class="centerContet">
+                        <div class="page4Contet">
+                            <div class="bg">
+                                <img src='' data-src="img/p4/bg.jpg?v=80" alt="" class="lazyLoad fullPage">
+                                <img src='' data-src="img/p4/0_0.png?v=80" alt="" class="lazyLoad animal animal1 ">
+                                <img src='' data-src="img/p4/0_1.png?v=80" alt=""
+                                     class="lazyLoad animal animal1 animal11 opacity0">
+                                <img src='' data-src="img/p4/1_0.png?v=80" alt="" class="lazyLoad animal animal2 ">
+                                <img src='' data-src="img/p4/1_1.png?v=80" alt=""
+                                     class="lazyLoad animal animal2 opacity0">
+                                <img src='' data-src="img/p4/2_0.png?v=80" alt="" class="lazyLoad animal animal3 ">
+                                <img src='' data-src="img/p4/2_1.png?v=80" alt=""
+                                     class="lazyLoad animal animal3 opacity0">
+                                <div class="girlList">
+                                    <img src='' data-src="img/p4/girl.png?v=80" alt="" class="lazyLoad girl girl0">
+                                    <img src='' data-src="img/p4/girl1.png?v=80" alt="" class="lazyLoad girl girl1">
+                                </div>
+
+                                <div class="qiqiu">
+                                    <img src='' data-src="img/p4/qiqiu.png?v=80" alt="" class="lazyLoad fullPage">
+
+                                </div>
+                            </div>
+                            <img src='' data-src="img/p4/yun0.png?v=80" alt="" class="lazyLoad yun0">
+                            <img src='' data-src="img/p4/yun1.png?v=80" alt="" class="lazyLoad yun1">
+
+
+                            <div class="ansPage fullPage">
+                                <div class="wenti4">
+                                    <img src='' data-src="img/p4/wenti.png?v=80" alt="" class="lazyLoad fullPage">
+                                    <div class="questionBox">
+                                        <div class="question" data-animalNum="1" data-id="1">
+                                            <img src='' data-src="img/p4/a.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                        <div class="question" data-animalNum="2" data-id="2">
+                                            <img src='' data-src="img/p4/b.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                        <div class="question" data-animalNum="3" data-id="3">
+                                            <img src='' data-src="img/p4/c.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                    </div>
+                                    <div class="button03 hide">
+                                        <img src='' data-src="img/button03.png?v=80" alt=""
+                                             class="lazyLoad fullPage">
+                                    </div>
+                                </div>
+                                <!--<img src='' data-src="img/down.png?v=80" alt="" class="lazyLoad down hide" id="down4">-->
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide swiper-no-swiping">
+            <div class="fullPage">
+                <div class="sectionContent">
+                    <div class="centerContet">
+                        <div class="page5Contet">
+                            <div class="bg">
+                                <img src='' data-src="img/p5/bg.jpg?v=80" alt="" class="lazyLoad bg">
+                                <div class="girlList">
+                                    <img src='' data-src="img/p5/girl.png?v=80" alt="" class="lazyLoad girl girl0_0">
+                                    <img src='' data-src="img/p5/girl0.png?v=80" alt="" class="lazyLoad girl girl0_1">
+                                </div>
+                                <img src='' data-src="img/p5/girl01.png?v=80" alt="" class="lazyLoad girl01">
+                                <img src='' data-src="img/p5/liwu00.png?v=80" alt="" class="lazyLoad liwu">
+                                <img src='' data-src="img/p5/liwu01.png?v=80" alt="" class="lazyLoad liwu">
+                                <div class="fieji">
+                                    <img src='' data-src="img/p5/feiji.png?v=80" alt="" class="lazyLoad fullPage">
+                                </div>
+                                <div class="yun5_1">
+                                    <img src='' data-src="img/p5/yun1.png?v=80" alt="" class="lazyLoad fullPage">
+                                </div>
+                                <div class="qiqiu">
+                                    <img src='' data-src="img/p5/qiqiu.png?v=80" alt="" class="lazyLoad fullPage">
+                                </div>
+                            </div>
+
+                            <div class="yun">
+                                <img src='' data-src="img/p5/yun.png?v=80" alt="" class="lazyLoad fullPage">
+                            </div>
+                            <div class="yun1">
+                                <img src='' data-src="img/p5/yun0.png?v=80" alt="" class="lazyLoad fullPage">
+                            </div>
+                            <div class="ansPage fullPage">
+                                <div class="wenti5">
+                                    <img src='' data-src="img/p5/wenti.png?v=80" alt="" class="lazyLoad fullPage">
+                                    <div class="questionBox">
+                                        <div class="question" data-id="1">
+                                            <img src='' data-src="img/p5/a.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                        <div class="question" data-id="2">
+                                            <img src='' data-src="img/p5/b.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                        <div class="question" data-id="3">
+                                            <img src='' data-src="img/p5/c.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                    </div>
+                                    <div class="button03 hide">
+                                        <img src='' data-src="img/button03.png?v=80" alt=""
+                                             class="lazyLoad fullPage">
+                                    </div>
+                                </div>
+                                <!--<img src='' data-src="img/down.png?v=80" alt="" class="lazyLoad down hide" id="down5">-->
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide swiper-no-swiping">
+            <div class="fullPage">
+                <div class="sectionContent">
+                    <div class="centerContet">
+                        <div class="page6Contet">
+                            <div class="bg">
+                                <img src='' data-src="img/p6/bg.jpg?v=80" alt="" class="lazyLoad fullPage">
+                                <div class="girlList">
+                                    <img src='' data-src="img/p6/girl0.png?v=80" alt="" class="lazyLoad girl">
+                                    <img src='' data-src="img/p6/girl1.png?v=80" alt="" class="lazyLoad girl">
+                                </div>
+                                <div class="qiqiu">
+                                    <img src='' data-src="img/p6/qiqiu.png?v=80" alt="" class="lazyLoad fullPage">
+                                </div>
+                            </div>
+
+                            <div class="yun">
+                                <img src='' data-src="img/p6/yun.png?v=80" alt="" class="lazyLoad fullPage">
+                            </div>
+                            <div class="yun2">
+                                <img src='' data-src="img/p6/yun2.png?v=80" alt="" class="lazyLoad fullPage">
+                            </div>
+                            <div class="yun1">
+                                <img src='' data-src="img/p6/yun01.png?v=80" alt="" class="lazyLoad fullPage">
+                            </div>
+                            <div class="yun02">
+                                <img src='' data-src="img/p6/yun02.png?v=80" alt="" class="lazyLoad fullPage">
+                            </div>
+                            <div class="ansPage fullPage">
+                                <div class="wenti6">
+                                    <img src='' data-src="img/p6/wenti.png?v=80" alt="" class="lazyLoad fullPage">
+                                    <div class="questionBox">
+                                        <div class="question2" data-id="1">
+                                            <img src='' data-src="img/p6/a.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                        <div class="question2" data-id="2">
+                                            <img src='' data-src="img/p6/b.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                        <div class="question2" data-id="3">
+                                            <img src='' data-src="img/p6/c.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                        <div class="question2" data-id="4">
+                                            <img src='' data-src="img/p6/d.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+                                        <div class="question2" data-id="5">
+                                            <img src='' data-src="img/p6/e.png?v=80" alt="" class="lazyLoad fullPage">
+                                        </div>
+
+                                    </div>
+                                    <div class="button03 hide">
+                                        <img src='' data-src="img/button03.png?v=80" alt=""
+                                             class="lazyLoad fullPage">
+                                    </div>
+                                </div>
+                                <!--<img src='' data-src="img/down.png?v=80" alt="" class="lazyLoad down hide" id="down6">-->
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide swiper-no-swiping">
+            <div class="fullPage">
+                <div class="sectionContent">
+                    <div class="centerContet">
+                        <div class="page7Contet">
+                            <div class="saveCard">
+                                <div class="fullPage">
+                                    <img src='' data-src="img/p7/ka10.jpg?v=80" alt=""
+                                         class="lazyLoad fullPage hide ka1 ka">
+                                    <img src='' data-src="img/p7/ka20.jpg?v=80" alt=""
+                                         class="lazyLoad fullPage hide ka2 ka">
+                                    <img src='' data-src="img/p7/ka30.jpg?v=80" alt=""
+                                         class="lazyLoad fullPage  hide ka3 ka">
+                                    <img src='' data-src="img/p7/ka40.jpg?v=80" alt=""
+                                         class="lazyLoad fullPage hide ka4 ka">
+                                    <img src='' data-src="img/p7/ka50.jpg?v=80" alt=""
+                                         class="lazyLoad fullPage hide ka5 ka">
+                                    <!--<img src='' data-src="img/p7/book.png?v=80" alt=""-->
+                                    <!--class="lazyLoad fullPage  ka1 ka">-->
+                                    <!--<img src='' data-src="img/p7/book.png?v=80" alt=""-->
+                                    <!--class="lazyLoad fullPage  ka2 ka">-->
+                                    <!--<img src='' data-src="img/p7/book.png?v=80" alt=""-->
+                                    <!--class="lazyLoad fullPage  ka3 ka">-->
+                                    <!--<img src='' data-src="img/p7/book.png?v=80" alt=""-->
+                                    <!--class="lazyLoad fullPage  ka4 ka">-->
+                                    <!--<img src='' data-src="img/p7/book.png?v=80" alt=""-->
+                                    <!--class="lazyLoad fullPage  ka5 ka">-->
+                                    <p class="name">1234</p>
+                                </div>
+
+                            </div>
+                            <div class="fullPage cardFullPage" style="opacity: 1">
+                                <div class="card">
+                                    <div class="carImg">
+                                        <div class="carList fullPage">
+                                            <img src='' data-src="img/p7/ka1.png?v=80" alt=""
+                                                 class="lazyLoad fullPage hide ka1 ka">
+                                            <img src='' data-src="img/p7/ka2.png?v=80" alt=""
+                                                 class="lazyLoad fullPage hide ka2 ka">
+                                            <img src='' data-src="img/p7/ka3.png?v=80" alt=""
+                                                 class="lazyLoad fullPage hide ka3 ka">
+                                            <img src='' data-src="img/p7/ka4.png?v=80" alt=""
+                                                 class="lazyLoad fullPage hide ka4 ka">
+                                            <img src='' data-src="img/p7/ka5.png?v=80" alt=""
+                                                 class="lazyLoad fullPage hide ka5 ka">
+                                            <p class="name">1234</p>
+
+                                        </div>
+                                        <!--<img src='' alt=""-->
+                                             <!--class="fullPage ka kaShow">-->
+                                        <img src='' alt=""
+                                             class="fullPage ka kaSave">
+
+                                        <div class="btn againBtn">
+                                            <img src='' data-src="img/p7/button01.png?v=80" alt=""
+                                                 class="lazyLoad fullPage">
+                                        </div>
+                                        <div class="btn shareBtn">
+                                            <img src='' data-src="img/p7/button02.png?v=80" alt=""
+                                                 class="lazyLoad fullPage">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="saveTip fullPage hide">
+                                        <img src="img/p7/saveTip.png" alt="" class="tipImg">
+                                        <div class="button03">
+                                            <img src="img/p7/button03.png" alt="" class="fullPage">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="fullPage waitPage">
+                                <!--<img src='' data-src="img/p7/bg01.jpg?v=80" alt="" class="lazyLoad fullPage">-->
+                                <div class="book">
+                                    <img src='' data-src="img/p7/book.png?v=80" alt="" class="lazyLoad fullPage">
+                                    <img src='' data-src="img/p7/light.png?v=80" alt="" class="lazyLoad light">
+                                    <img src='' data-src="img/p7/01.png?v=80" alt="" class="lazyLoad girl">
+                                    <img src='' data-src="img/p7/02.png?v=80" alt="" class="lazyLoad girl opacity0">
+                                    <img src='' data-src="img/p7/03.png?v=80" alt="" class="lazyLoad girl opacity0">
+                                </div>
+
+                                <img src='' data-src="img/p7/wenzi.png?v=80" alt="" class="lazyLoad wenzi">
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--</div>-->
+<div id="loadPage">
+    <img src='' data-src="img/load/0.png?v=80" alt="" class="fullPage hide lazyLoad">
+    <img src='' data-src="img/load/1.png?v=80" alt="" class="fullPage hide lazyLoad">
+    <img src='' data-src="img/load/2.png?v=80" alt="" class="fullPage hide lazyLoad">
+    <img src='' data-src="img/load/3.png?v=80" alt="" class="fullPage hide lazyLoad">
+    <img src='' data-src="img/load/4.png?v=80" alt="" class="fullPage hide lazyLoad">
+    <img src='' data-src="img/load/5.png?v=80" alt="" class="fullPage hide lazyLoad">
+    <img src='' data-src="img/load/6.png?v=80" alt="" class="fullPage hide lazyLoad">
+    <img src='' data-src="img/load/7.png?v=80" alt="" class="fullPage hide lazyLoad">
+    <img src='' data-src="img/load/8.png?v=80" alt="" class="fullPage hide lazyLoad">
+    <img src='' data-src="img/load/9.png?v=80" alt="" class="fullPage hide lazyLoad">
+    <!--<img src="img/bg.jpg?v=80" class="fullPage">-->
+    <div class="lineBox">
+        <img src="img/load/jdt_bg.png?v=80" alt="" class="fullPage">
+        <!--<img src="img/load/jdt_on.png?v=80" alt="" class="redLine">-->
+        <div class="redLine"></div>
+    </div>
+    <div class="loadQqBox">
+        <img src="img/load/qiqiu.png?v=80" alt="" class="loadQq">
+    </div>
+    <p class="loadW">
+        <img src="img/load/0.png?v=80" alt="" class="loadW1 hide">
+        <img src="img/load/1.png?v=80" alt="" class="loadW1 hide">
+        <img src="img/load/2.png?v=80" alt="" class="loadW1 hide">
+        <img src="img/load/3.png?v=80" alt="" class="loadW1 hide">
+        <img src="img/load/4.png?v=80" alt="" class="loadW1 hide">
+        <img src="img/load/5.png?v=80" alt="" class="loadW1 hide">
+        <img src="img/load/6.png?v=80" alt="" class="loadW1 hide">
+        <img src="img/load/7.png?v=80" alt="" class="loadW1 hide">
+        <img src="img/load/8.png?v=80" alt="" class="loadW1 hide">
+        <img src="img/load/9.png?v=80" alt="" class="loadW1 hide">
+        <img src="img/load/0.png?v=80" alt="" class="loadW2 hide">
+        <img src="img/load/1.png?v=80" alt="" class="loadW2 hide">
+        <img src="img/load/2.png?v=80" alt="" class="loadW2 hide">
+        <img src="img/load/3.png?v=80" alt="" class="loadW2 hide">
+        <img src="img/load/4.png?v=80" alt="" class="loadW2 hide">
+        <img src="img/load/5.png?v=80" alt="" class="loadW2 hide">
+        <img src="img/load/6.png?v=80" alt="" class="loadW2 hide">
+        <img src="img/load/7.png?v=80" alt="" class="loadW2 hide">
+        <img src="img/load/8.png?v=80" alt="" class="loadW2 hide">
+        <img src="img/load/9.png?v=80" alt="" class="loadW2 hide">
+        <img src="img/load/0.png?v=80" alt="" class="loadW3">
+        <img src="img/load/1.png?v=80" alt="" class="loadW3 hide">
+        <img src="img/load/2.png?v=80" alt="" class="loadW3 hide">
+        <img src="img/load/3.png?v=80" alt="" class="loadW3 hide">
+        <img src="img/load/4.png?v=80" alt="" class="loadW3 hide">
+        <img src="img/load/5.png?v=80" alt="" class="loadW3 hide">
+        <img src="img/load/6.png?v=80" alt="" class="loadW3 hide">
+        <img src="img/load/7.png?v=80" alt="" class="loadW3 hide">
+        <img src="img/load/8.png?v=80" alt="" class="loadW3 hide">
+        <img src="img/load/9.png?v=80" alt="" class="loadW3 hide">
+        <img src="img/load/fh.png?v=80" alt="" class="loadW4">
+    <div class="clear"></div>
+    </p>
+
+
+</div>
+
+<div class="music" data-id="1">
+    <img src="img/musicOn.png?v=80" alt="" class="lazyLoad fullPage">
+    <img src="img/musicOff.png?v=80" alt="" class="lazyLoad fullPage hide">
+</div>
+<div class="shareP fullPage hide">
+    <img src="img/p7/fenxiang.png?v=80" alt=""
+         class="fenxiang">
+    <img src="img/p7/fenxiang_zi.png?v=80" alt=""
+         class="fenxiang_zi">
+    <div class="button03">
+        <img src="img/p7/button03.png?v=80" alt=""
+             class="fullPage">
+    </div>
+
+
+</div>
+
+<!--<div id="pauseFullPage" class="fullPage">-->
+
+<!--</div>-->
+<script>
+    $("#videoBtn2").on("click", function () {
+        $("#vidoeId2_2").show();
+        $("#vidoeId2_2")[0].play();
+    })
+    document.addEventListener("WeixinJSBridgeReady", function () {
+        $("#bgMusic")[0].play();
+//        $("#bgMusic")[0].pause();
+    }, false);
+    $("#bgMusic")[0].play();
+    //    $("#bgMusic")[0].pause();
+
+
+    window.shareManage.init({
+        title: "PANDORA员工行为大揭秘",
+        desc: "还没有领取你的PANDORA员工行为解密卡片？速来点击",
+        imgUrl: 'https://www.jwnice.com/h5/active/pdl2/img/icon.jpg',
+        link: window.location.href
+    });
+//    console.log("l-----",parseInt(Math.random() * 2 + 4))
+</script>
+<script src="js/index5_test.js?v=80"></script>
+<script>
+
+
+</script>
+
+</body>
+</html>

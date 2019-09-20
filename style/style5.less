@@ -1,0 +1,1492 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(71, 68, 135);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+img{
+  pointer-events: none;
+}
+.kaSave{
+  pointer-events: auto;
+  opacity: 0;
+}
+
+@WIDTH: 750;
+@HEIGHT: 1174;
+@rem: 25rem;
+.fullPage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  //overflow: hidden;
+}
+
+.toFullPage {
+  position: relative;
+  height: 100%;
+  width: auto;
+  left: 0;
+  top: 0;
+}
+
+.opacity0 {
+  opacity: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.wRem(@width) {
+  width: @width/@WIDTH*@rem;
+}
+
+.hRem(@height) {
+  height: @height/@WIDTH*@rem;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: white;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: white;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: white;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: white;
+}
+
+.sectionContent {
+  //position: absolute;
+  //width: 75rem;
+  //height: 100%;
+  //left: -25rem;
+  //top: 0;
+  //overflow: hidden;
+  //background-color: blue;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+@media screen and (min-aspect-ratio: ~'750/1174') {
+  .sectionContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+    //background-color: rebeccapurple;
+  }
+}
+
+.centerContet {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  //margin: auto;
+  top: 0;
+  bottom: 0;
+  //background-color: wheat;
+}
+
+.page1Contet {
+  position: absolute;
+  //width: @rem;
+  //height: @HEIGHT/@WIDTH*@rem;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  .yun {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    //.yunfudong(yun1,5s,-10%)
+  }
+  .yun0 {
+    position: absolute;
+    .wRem(110);
+    .hRem(80);
+    left: 70%;
+    top: 13%;
+    .feijiAni(yun0_0, 9s, 10rem, 0rem, -25rem, 0rem)
+    //.yunfudong(yun1,5s,-10%)
+  }
+  .tit {
+    position: absolute;
+    .wRem(750);
+    .hRem(300);
+    top: 30%;
+    .qiqiu {
+      position: absolute;
+      .wRem(250);
+      .hRem(340);
+      left: 6%;
+      bottom: 78%;
+      .fudong(qiqiu, 2s)
+    }
+  }
+  .feiji {
+    position: absolute;
+    .wRem(100);
+    .hRem(60);
+    top: 61%;
+    left: 55%;
+    .feijiAni(feiji1, 9s, 10rem, 10rem, -80rem, -80rem)
+  }
+  .nameInput {
+    position: absolute;
+    .wRem(465);
+    .hRem(74);
+    left: 0;
+    right: 0;
+    top: 58%;
+    margin: auto;
+
+    input {
+      background-color: rgba(0, 0, 0, 0);
+      text-align: center;
+      line-height: 74/@WIDTH*@rem;
+      font-size: 1rem;
+      color: white;
+      border: 0px;
+
+    }
+  }
+  .btn {
+    position: absolute;
+    .wRem(195);
+    .hRem(63);
+    top: 78%;
+  }
+  .restBtn {
+    left: 19%;
+  }
+  .startBtn {
+    right: 19%;
+  }
+  .girl {
+    position: absolute;
+    .wRem(105);
+    .hRem(301);
+    left: 0%;
+    bottom: 25%;
+    //top: 49%;
+  }
+  .tankuang {
+    position: absolute;
+    .wRem(432);
+    .hRem(231);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 5rem;
+    margin: auto;
+  }
+  .tankuangBox {
+    background-color: rgba(0, 0, 0, 0.5);
+    .button03 {
+      top: 8rem;
+      bottom: 0;
+    }
+  }
+  .sexBtn {
+    position: absolute;
+    .wRem(222);
+    .hRem(76);
+    top: 68%;
+    img:nth-child(2) {
+      .hide;
+    }
+  }
+  .sexBtnW {
+    left: 19%;
+  }
+  .sexBtnM {
+    right: 19%;
+  }
+  .sexBtnActive {
+    img:nth-child(2) {
+      display: block;
+    }
+  }
+}
+
+.page2Contet {
+  position: absolute;
+  //width: @rem;
+  //height: 100%;
+  left: 0%;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  .bg {
+    //position: absolute;
+    //.wRem(750);
+    //.hRem(1174);
+    //left: 0;
+    //right: 0;
+    //top: 0;
+    //bottom: 0;
+    //margin: auto;
+    .fullPage;
+  }
+  .yun1 {
+    position: absolute;
+    width: 25rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    //.yunfudong(yun2_1,6s,-11rem)
+  }
+  .yun2 {
+    position: absolute;
+    width: 25rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    //.yunfudong(yun2_2,9s,-10rem)
+  }
+  .girl {
+    position: absolute;
+    .wRem(150);
+    .hRem(320);
+    //left: 28rem;
+    //right: 0;
+    //top: -35rem;
+    //bottom: 0;
+    //margin: auto;
+    top: 26%;
+    right: 4%;
+    opacity: 0;
+
+  }
+  .p2GirlAnia {
+    .feijiAni(girlAni1, 6s, 79%, -125%, 0rem, 0rem, 1);
+    opacity: 1;
+    //.feijiAni(girlAni4, 6s, -14%, -17%, 5%, 8.5%, 1)
+  }
+  .gouPen {
+    position: absolute;
+    .wRem(87);
+    .hRem(74);
+    left: 18%;
+    top: 75%;
+    .p2gou1 {
+      position: absolute;
+      .wRem(135);
+      .hRem(99);
+      bottom: 58%;
+      right: 65%;
+    }
+    .p2gou2 {
+      position: absolute;
+      .wRem(108);
+      .hRem(129);
+      bottom: 38%;
+      right: 65%;
+    }
+  }
+  .qiqiu {
+    position: absolute;
+    .wRem(152);
+    .hRem(192);
+    top: 78%;
+    right: 3%;
+    .fudong(qiqiu2, 2s)
+  }
+  .wenti2 {
+    position: absolute;
+    .wRem(621);
+    .hRem(593);
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    .questionBox {
+      position: absolute;
+      left: 1rem;
+      top: 5rem;
+    }
+    .question {
+      position: relative;
+      .wRem(420);
+      .hRem(70);
+      margin-bottom: 1.5rem;
+    }
+    .button03 {
+      top: 110%;
+    }
+  }
+
+}
+
+.page3Contet {
+  position: absolute;
+  //width: @rem;
+  //height: 100%;
+  left: 0%;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  .bg {
+    //position: absolute;
+    //.wRem(750);
+    //.hRem(1336);
+    //left: 0;
+    //right: 0;
+    ////top: 0;
+    //bottom: 0;
+    //margin: auto;
+    //.fullPage;
+    position: absolute;
+    width: 100%;
+    height: 1336/@HEIGHT*100%;
+    left: 0;
+    bottom: 0;
+    //top:-(1336-@HEIGHT)/@HEIGHT*100%;
+  }
+  .yun03 {
+    position: absolute;
+    width: 25rem;
+    //height: 130/@HEIGHT*100%;
+    //min-height:130/@WIDTH*@rem ;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    //.yunfudong(yun3_3,6s,-11rem)
+  }
+  .yun02 {
+    position: absolute;
+    width: 25rem;
+    //height: 19/@HEIGHT*100%;
+    //min-height:190/@WIDTH*@rem ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    //.yunfudong(yun3_2,4s,-3rem)
+  }
+  .girl1 {
+    position: absolute;
+    .wRem(145);
+    .hRem(335);
+    bottom: 0%;
+    right: 22%;
+  }
+  .girl2 {
+    position: absolute;
+    .wRem(154);
+    .hRem(352);
+    bottom: -1%;
+    right: 22%;
+  }
+  .girl0 {
+    position: absolute;
+    .wRem(545);
+    .hRem(524);
+    bottom: 32%;
+    left: 45%;
+  }
+  .feiji {
+    position: absolute;
+    .wRem(100);
+    .hRem(60);
+    top: 25%;
+    right: 30%;
+    .feijiAni(feiji2, 9s, -30rem, -30rem, 20rem, 30rem)
+  }
+  .qiqiu {
+    position: absolute;
+    .wRem(136);
+    .hRem(188);
+    top: 26%;
+    left: 10%;
+    .fudong(qiqiu3, 2s)
+  }
+  .yun0 {
+    position: absolute;
+    .wRem(186);
+    left: 0;
+    top: 70%;
+    .yunfudong(yun3_0, 5s, -1rem)
+  }
+  .yun1 {
+    position: absolute;
+    .wRem(105);
+    .hRem(82);
+    top: 46%;
+    left: 30%;
+    .feijiAni(yun3_1, 20s, -10rem, 0rem, 20rem, 0rem)
+  }
+  .qipao01 {
+    position: absolute;
+    .wRem(15);
+    .hRem(15);
+    bottom: 61%;
+    left: 89%;
+    .opacityAni(qipao01Ani, 1s, infinite);
+  }
+  .qipao02 {
+    position: absolute;
+    .wRem(30);
+    .hRem(28);
+    bottom: 62%;
+    left: 89%;
+    .opacityAni(qipao02Ani, 1s, infinite, 1s);
+  }
+  .qipao03 {
+    position: absolute;
+    .wRem(81);
+    .hRem(75);
+    bottom: 64%;
+    left: 89%;
+    .opacityAni(qipao03Ani, 1s, infinite, 2s);
+  }
+  .wenti3 {
+    position: absolute;
+    .wRem(585);
+    .hRem(574);
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    .questionBox {
+      position: absolute;
+      left: 1rem;
+      top: 4.5rem;
+    }
+    .question {
+      position: relative;
+      .wRem(425);
+      //.hRem(70);
+      margin-bottom: 1.0rem;
+      .fullPage {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0;
+      }
+    }
+    .button03 {
+      bottom: -3rem;
+    }
+  }
+}
+
+.page4Contet {
+  position: absolute;
+  //width: @rem;
+  //height: 100%;
+  left: 0%;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  .bg {
+    //position: absolute;
+    //.wRem(750);
+    //.hRem(1174);
+    //left: 0;
+    //right: 0;
+    ////top: 0;
+    //bottom: 0;
+    //margin: auto;
+    .fullPage;
+  }
+  .yun0 {
+    position: absolute;
+    width: 25rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    //.yunfudong(yun4_0,6s,-3rem)
+  }
+  .yun1 {
+    position: absolute;
+    width: 25rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    //.yunfudong(yun4_1,4s,-4rem)
+  }
+  .girlList {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    opacity: 0;
+
+  }
+  .p4GirlAnia {
+    opacity: 1;
+    .feijiAni(girlAni4, 6s, -14%, -17%, 5%, 8.5%, 1)
+    //.feijiAni(girlAni1, 6s, 5.2rem, -19.5rem, 0rem, 0rem,1)
+  }
+  .girl0 {
+    position: absolute;
+    .wRem(145);
+    .hRem(335);
+    left: 0%;
+    top: 0%;
+  }
+  .girl1 {
+    position: absolute;
+    .wRem(154);
+    .hRem(352);
+    left: 0%;
+    top: 0%;
+  }
+  .animal {
+    position: absolute;
+    .wRem(133);
+    .hRem(140);
+    left: 0%;
+    top: 79%;
+  }
+  .animal1 {
+    position: absolute;
+    .wRem(118);
+    .hRem(136);
+    left: 49%;
+    top: 78.8%;
+  }
+  .animal11 {
+    position: absolute;
+    .wRem(215);
+    .hRem(194);
+    left: 36%;
+    top: 79%;
+  }
+  .animal2 {
+    left: 66%;
+  }
+  .animal3 {
+    left: 30%;
+  }
+  .qiqiu {
+    position: absolute;
+    .wRem(305);
+    .hRem(625);
+    top: 26%;
+    left: 60%;
+    .fudong(qiqiu4, 4s)
+  }
+  .wenti4 {
+    position: absolute;
+    .wRem(600);
+    .hRem(600);
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    .questionBox {
+      position: absolute;
+      left: 1.5rem;
+      top: 7rem;
+    }
+    .question {
+      position: relative;
+      .wRem(440);
+      //.hRem(70);
+      margin-bottom: 1.0rem;
+      .fullPage {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0;
+      }
+    }
+    .button03 {
+      bottom: -2rem;
+    }
+  }
+
+}
+
+.page5Contet {
+  position: absolute;
+  //width: @rem;
+  //height: 100%;
+  left: 0%;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  .bg {
+    //position: absolute;
+    //.wRem(750);
+    //.hRem(1174);
+    //left: 0;
+    //right: 0;
+    //top: 0;
+    //bottom: 0;
+    //margin: auto;
+    .fullPage;
+  }
+  .liwu {
+    position: absolute;
+    .wRem(150);
+    .hRem(115);
+    left: 40%;
+    bottom: 42%;
+  }
+  .girlList {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+
+    opacity: 0;
+
+  }
+  .p5GirlAnia {
+    opacity: 1;
+    .feijiAni(girlAni5, 10s, 52%, -17%, 19%, 15%, 1)
+    //.feijiAni(girlAni1, 6s, 5.2rem, -19.5rem, 0rem, 0rem,1)
+  }
+  .girl0_0 {
+    position: absolute;
+    .wRem(145);
+    .hRem(335);
+    left: 25%;
+    top: 7%;
+  }
+  .girl0_1 {
+    position: absolute;
+    .wRem(144);
+    .hRem(340);
+    left: 25%;
+    top: 7%;
+  }
+  .girl01 {
+    position: absolute;
+    .wRem(150);
+    .hRem(320);
+    left: 77%;
+    bottom: 13%;
+    //top: 60%;
+  }
+  .fieji {
+    position: absolute;
+    .wRem(114);
+    .hRem(70);
+    left: 77%;
+    top: 11%;
+    .feijiAni(feiji_5, 10s, 10rem, 0rem, -30rem, 15rem)
+  }
+  .qiqiu {
+    position: absolute;
+    .wRem(120);
+    .hRem(175);
+    top: 66%;
+    left: 10%;
+    .fudong(qiqiu5, 3s)
+  }
+  .yun {
+    position: absolute;
+    //width: 100%;
+    width: 25rem;
+    .hRem(200);
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    //.yunfudong(yun5,4s,-2rem)
+  }
+  .yun1 {
+    position: absolute;
+    width: 25rem;
+    .hRem(200);
+    bottom: 0;
+    //.yunfudong(yun5_01,5s,-10%)
+  }
+  .yun5_1 {
+    position: absolute;
+    .wRem(170);
+    .hRem(160);
+    left: 0;
+    top: 72%;
+    .yunfudong(yun5_1_ani, 5s, -10%)
+  }
+  .wenti5 {
+    position: absolute;
+    .wRem(600);
+    .hRem(600);
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    .questionBox {
+      position: absolute;
+      left: 1.5rem;
+      top: 7rem;
+    }
+    .question {
+      position: relative;
+      .wRem(440);
+      //.hRem(70);
+      margin-bottom: 1.0rem;
+      .fullPage {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0;
+      }
+    }
+    .button03 {
+      bottom: -4rem;
+    }
+  }
+
+}
+
+.page6Contet {
+  position: absolute;
+  //width: @rem;
+  //height: 100%;
+  left: 0%;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  .bg {
+    //position: absolute;
+    //.wRem(750);
+    //.hRem(1174);
+    //left: 0;
+    //right: 0;
+    //top: 0;
+    ////bottom: 0;
+    //margin: auto;
+    .fullPage;
+  }
+  .girlList {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+
+    opacity: 0;
+
+  }
+  .p6GirlAnia {
+    opacity: 1;
+    .feijiAni(girlAni6_0, 8s, 20%, -20%, 56%, 12%, 1)
+  }
+  .girl {
+    position: absolute;
+    .wRem(150);
+    .hRem(320);
+    left: 53%;
+    top: 7%;
+  }
+  .qiqiu {
+    position: absolute;
+    .wRem(250);
+    .hRem(340);
+    left: 63%;
+    top: 68%;
+    .fudong(qiqiu6, 3s);
+    z-index: 2;
+  }
+  .yun {
+    position: absolute;
+    width: 25rem;
+    .hRem(200);
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    //.yunfudong(yun5,4s,-2rem)
+  }
+  .yun2 {
+    position: absolute;
+    width: 25rem;
+    .hRem(200);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    //.yunfudong(yun5_2,3s,-3rem)
+  }
+  .yun1 {
+    position: absolute;
+    .wRem(114);
+    .hRem(70);
+    top: 30%;
+    left: 10%;
+    .yunfudong(yun5_1, 6s, 8rem)
+  }
+  .yun02 {
+    position: absolute;
+    .wRem(190);
+    .hRem(180);
+    top: 60%;
+    right: 0%;
+    img {
+      .yunfudong(yun02, 3s, 1rem)
+    }
+
+  }
+  .wenti6 {
+    position: absolute;
+    .wRem(614);
+    .hRem(781);
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    //z-index: 5;
+    .questionBox {
+      position: absolute;
+      left: 2.5rem;
+      top: 6rem;
+    }
+    .question2 {
+      position: relative;
+      .wRem(440);
+      //.hRem(70);
+      margin-bottom: 0.2rem;
+      .fullPage {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0;
+      }
+    }
+    .button03 {
+      bottom: -4rem;
+    }
+  }
+}
+
+.page0Contet {
+  position: absolute;
+  //width: @rem;
+  //height: 100%;
+  left: 0%;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  #men {
+    position: absolute;
+    width: 530/@WIDTH* @rem;
+    height: 1080/@WIDTH* @rem;
+    left: 0%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    //margin-left: 13%;
+    transform-origin: 56% 50%;
+    .men {
+      position: absolute;
+      width: 457/@WIDTH* @rem;
+      height: 711/@WIDTH* @rem;
+      left: 2rem;
+      right: 0;
+      margin: auto;
+      top: 0;
+    }
+    .light {
+      position: absolute;
+      width: 550/530*100%;
+      //height: 370/@WIDTH* @rem;
+      left: 0.3rem;
+      top: 670/@WIDTH* @rem;
+      opacity: 0;
+
+    }
+    .word {
+      position: absolute;
+      width: 350/530*100%;
+      //height: 370/@WIDTH* @rem;
+      left: 19%;
+      bottom: 6%;
+      opacity: 0;
+
+    }
+    .hua {
+      position: absolute;
+      width: 270/530*100%;
+      //height: 120/@WIDTH* @rem;
+      left: 29%;
+      top: 15%;
+      opacity: 0;
+
+    }
+    .girl {
+      position: absolute;
+      width: 172/530*100%;
+      //height: 440/@WIDTH* @rem;
+      left: 37%;
+      top: 21%;
+      opacity: 0;
+
+    }
+  }
+  .tip {
+    position: absolute;
+    width: 135/@WIDTH* @rem;
+    height: 41/@WIDTH* @rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 4%;
+    .opacityAni(myfirst, 1s, infinite);
+  }
+}
+
+.page7Contet {
+  position: absolute;
+  //width: @rem;
+  //height: 100%;
+  left: 0%;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  .waitPage {
+    background-color: #474487;
+
+    .book {
+      position: absolute;
+      .wRem(470);
+      .hRem(480);
+      left: 0%;
+      right: 0;
+      top: 0%;
+      bottom: 0;
+      margin: auto;
+    }
+    .girl {
+      position: absolute;
+      .wRem(345);
+      .hRem(385);
+      left: 0%;
+      right: 0;
+      bottom: 14%;
+      margin: auto;
+    }
+    .light {
+      position: absolute;
+      .wRem(563);
+      .hRem(575);
+      left: 0%;
+      right: 0;
+      bottom: 14%;
+      margin: auto;
+      .opacityAni(myfirst2, 1s, infinite);
+    }
+    .wenzi {
+      position: absolute;
+      .wRem(326);
+      .hRem(106);
+      left: 0%;
+      right: 0;
+      top: 75%;
+      margin: auto;
+      .opacityAni(wenzi, 1s, infinite);
+    }
+  }
+  .saveCard{
+    position: absolute;
+    left: 0;
+    right: 0;
+    .wRem(500);
+    .hRem(889.333333);
+    transform-origin: 56% 0%;
+    //z-index: 100;
+    .name {
+      position: absolute;
+      color: #474487;
+      width: 28%;
+      height: 1.0rem;
+      line-height: 1.0rem;
+      font-size: 0.5rem;
+      left: 6%;
+      bottom: 26.5%;
+      overflow: hidden;
+      text-align: center;
+      //background-color: #ef979f;
+    }
+  }
+  .cardFullPage{
+    background-color: #474487;
+  }
+  .card {
+    position: absolute;
+    width: 25rem;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    .carImg {
+      position: absolute;
+      width: 25rem;
+      height: 950/@HEIGHT*100%;
+      left: 0;
+      right: 0;
+      top: 5%;
+      margin: auto;
+      .name {
+        position: absolute;
+        color: #474487;
+        width: 6rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        left: 1%;
+        bottom: 8.5%;
+        overflow: hidden;
+        text-align: center;
+      }
+    }
+    .btn {
+      position: absolute;
+      .wRem(230);
+      .hRem(72);
+      top: 103%;
+    }
+    .againBtn {
+      left: 0%;
+    }
+    .shareBtn {
+      right: 0%;
+    }
+  }
+  .saveTip{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    .tipImg{
+      position: absolute;
+      .wRem(331);
+      .hRem(177);
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 7rem;
+      margin: auto;
+    }
+    .button03{
+      top: 3rem;
+      bottom: 0;
+    }
+  }
+}
+
+.ansPage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.button03 {
+  position: absolute;
+  .wRem(196);
+  .hRem(63);
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.shareP {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  .fenxiang {
+    position: absolute;
+    .wRem(224);
+    .hRem(283);
+    right: 1rem;
+    top: 1rem;
+  }
+  .fenxiang_zi {
+    position: absolute;
+    .wRem(425);
+    .hRem(230);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .button03 {
+    top: 10rem;
+    bottom: 0;
+  }
+}
+
+.music {
+  position: absolute;
+  .wRem(88);
+  .hRem(88);
+  top: 1rem;
+  right: 1rem;
+  z-index: 49;
+}
+
+.down {
+  position: absolute;
+  .wRem(71);
+  .hRem(67);
+  left: 0;
+  right: 0;
+  //top: 0%;
+  bottom: 0;
+  //bottom: 1%;
+  margin: auto;
+  .opacityAni(myfirst, 1s, infinite);
+}
+
+.duihao {
+  position: absolute;
+  .wRem(56);
+  .hRem(56);
+  left: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.lightAni {
+
+  .opacityAni(myfirst, 2s, 1);
+}
+
+.opacityAni(@name,@durtion,@count,@dely:0s) {
+  animation: @name @durtion linear @dely @count alternate forwards;
+  -moz-animation: @name @durtion linear @dely @count alternate forwards; /* Firefox */
+  -webkit-animation: @name @durtion linear @dely @count alternate forwards; /* Safari 和 Chrome */
+  -o-animation: @name @durtion linear @dely @count alternate forwards; /* Opera */
+  @keyframes @name {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1
+    }
+  }
+  @-moz-keyframes @name /* Firefox */
+  {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1
+    }
+  }
+
+  @-webkit-keyframes @name /* Safari 和 Chrome */
+  {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1
+    }
+  }
+
+  @-o-keyframes @name /* Opera */
+  {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1
+    }
+  }
+}
+
+.yunfudong(@name,@durtion:2s,@left) {
+
+  animation: @name @durtion ease-in-out 0s infinite alternate;
+  -moz-animation: @name @durtion ease-in-out 0s infinite alternate; /* Firefox */
+  -webkit-animation: @name @durtion ease-in-out 0s infinite alternate; /* Safari 和 Chrome */
+  -o-animation: @name @durtion ease-in-out 0s infinite alternate; /* Opera */
+  @keyframes @name {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: @left
+    }
+  }
+  @-moz-keyframes @name /* Firefox */
+  {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: @left
+    }
+  }
+
+  @-webkit-keyframes @name /* Safari 和 Chrome */
+  {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: @left
+    }
+  }
+
+  @-o-keyframes @name /* Opera */
+  {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: @left
+    }
+  }
+
+}
+
+.fudong(@name:qiqiu,@durtion:2s) {
+  img {
+
+    animation: @name @durtion linear 0s infinite alternate;
+    -moz-animation: @name @durtion linear 0s infinite alternate; /* Firefox */
+    -webkit-animation: @name @durtion linear 0s infinite alternate; /* Safari 和 Chrome */
+    -o-animation: @name @durtion linear 0s infinite alternate; /* Opera */
+    @keyframes @name {
+      0% {
+        top: 0;
+      }
+      100% {
+        top: -10%
+      }
+    }
+    @-moz-keyframes @name /* Firefox */
+    {
+      0% {
+        top: 0;
+      }
+      100% {
+        top: -10%
+      }
+    }
+
+    @-webkit-keyframes @name /* Safari 和 Chrome */
+    {
+      0% {
+        top: 0;
+      }
+      100% {
+        top: -10%
+      }
+    }
+
+    @-o-keyframes @name /* Opera */
+    {
+      0% {
+        top: 0;
+      }
+      100% {
+        top: -10%
+      }
+    }
+  }
+}
+
+.feijiAni(@name,@durtion,@fromY,@fromX,@toY,@toX,@count:infinite) {
+  img {
+
+    animation: @name @durtion linear 0s @count forwards;
+    -moz-animation: @name @durtion linear 0s @count forwards; /* Firefox */
+    -webkit-animation: @name @durtion linear 0s @count forwards; /* Safari 和 Chrome */
+    -o-animation: @name @durtion linear 0s @count forwards; /* Opera */
+    @keyframes @name {
+      0% {
+        top: @fromX;
+        left: @fromY;
+      }
+      100% {
+        top: @toX;
+        left: @toY
+      }
+    }
+    @-moz-keyframes @name /* Firefox */
+    {
+      0% {
+        top: @fromX;
+        left: @fromY;
+      }
+      100% {
+        top: @toX;
+        left: @toY
+      }
+    }
+
+    @-webkit-keyframes @name /* Safari 和 Chrome */
+    {
+      0% {
+        top: @fromX;
+        left: @fromY;
+      }
+      100% {
+        top: @toX;
+        left: @toY
+      }
+    }
+
+    @-o-keyframes @name /* Opera */
+    {
+      0% {
+        top: @fromX;
+        left: @fromY;
+      }
+      100% {
+        top: @toX;
+        left: @toY
+      }
+    }
+  }
+}
+
+#loadPage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgb(71, 68, 135);
+  color: black;
+  .lineBox {
+    position: absolute;
+    //background-color: white;
+    width: 540/@WIDTH*@rem;
+    height: 30/@WIDTH*@rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    border-radius: 15/@WIDTH*@rem;
+    overflow-x: hidden;
+    //overflow: hidden;
+    .redLine {
+      position: absolute;
+      //width: 100%;
+      //height: 100%;
+      left: -100%;
+      right: 100%;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 15/@WIDTH*@rem;
+      background-color: rgb(239, 151, 159);
+      border: 2px solid rgb(98, 76, 129);
+      //margin: -1px;
+      //padding: 1px;
+
+    }
+  }
+  .loadW {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    max-width: 3rem;
+    margin: auto;
+    margin-top: 1rem;
+    color: white;
+    line-height: 1rem;
+    height: 1rem;
+    text-align: center;
+    //.wRem(160);
+    img {
+      position: absolute;
+      .wRem(30);
+      .hRem(40);
+    }
+    .loadW1 {
+      left: 0;
+    }
+    .loadW2 {
+      left: 0.6rem;
+    }
+    .loadW3 {
+      left: 1.2rem;
+    }
+    .loadW4 {
+      left: 1.8rem;
+    }
+
+  }
+  .loadQqBox {
+    position: absolute;
+    width: 540/@WIDTH*@rem;
+    height: 30/@WIDTH*@rem;
+    left: -3rem;
+    right: 0;
+    bottom: 1.5rem;
+    top: 0;
+    margin: auto;
+  }
+  .loadQq {
+    position: absolute;
+    width: 110/@WIDTH*@rem;
+    left: 0rem;
+    bottom: 0;
+
+  }
+
+}
+
+.clear {
+  clear: both;
+}
